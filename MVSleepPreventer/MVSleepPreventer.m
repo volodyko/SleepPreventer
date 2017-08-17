@@ -42,15 +42,10 @@
 
 - (BOOL)aquireSleepLock
 {
-	return [self aquireSleepLock:self.assertionID];
-}
-
-- (BOOL)aquireSleepLock:(IOPMAssertionID) assertionID
-{
 	CFStringRef reasonForActivity = CFSTR("MVSleepLock");
 	
 	IOReturn success = IOPMAssertionCreateWithName(kIOPMAssertionTypeNoDisplaySleep,
-												   kIOPMAssertionLevelOn, reasonForActivity, &assertionID);
+												   kIOPMAssertionLevelOn, reasonForActivity, &_assertionID);
 	if(success == kIOReturnSuccess)
 	{
 		NSLog(@"sleep: aquire success");
@@ -59,14 +54,10 @@
 	return self.lockAquired;
 }
 
+
 - (BOOL)releaseSleepLock
 {
-	return [self releaseSleepLock:self.assertionID];
-}
-
-- (BOOL)releaseSleepLock:(IOPMAssertionID) assertionID
-{
-	IOReturn success = IOPMAssertionRelease(assertionID);
+	IOReturn success = IOPMAssertionRelease(_assertionID);
 	if(success == kIOReturnSuccess)
 	{
 		NSLog(@"sleep: release success");

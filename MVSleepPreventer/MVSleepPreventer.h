@@ -18,7 +18,4 @@
 - (BOOL)releaseSleepLock;
 - (BOOL)aquireSleepLock;
 
-- (BOOL)releaseSleepLock:(IOPMAssertionID) assertionID;
-- (BOOL)aquireSleepLock:(IOPMAssertionID) assertionID;
-
 @end
