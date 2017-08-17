@@ -12,6 +12,7 @@
 		0D86030B1F45CC95009536EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D86030A1F45CC95009536EC /* ViewController.m */; };
 		0D86030D1F45CC95009536EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D86030C1F45CC95009536EC /* Assets.xcassets */; };
 		0D8603101F45CC95009536EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D86030E1F45CC95009536EC /* Main.storyboard */; };
+		0D8603191F45CCBA009536EC /* MVSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8603181F45CCBA009536EC /* MVSleepPreventer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		0D86030C1F45CC95009536EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D86030F1F45CC95009536EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D8603111F45CC95009536EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8603171F45CCBA009536EC /* MVSleepPreventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSleepPreventer.h; sourceTree = "<group>"; };
+		0D8603181F45CCBA009536EC /* MVSleepPreventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSleepPreventer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				0D86030E1F45CC95009536EC /* Main.storyboard */,
 				0D8603111F45CC95009536EC /* Info.plist */,
 				0D8603061F45CC95009536EC /* Supporting Files */,
+				0D8603171F45CCBA009536EC /* MVSleepPreventer.h */,
+				0D8603181F45CCBA009536EC /* MVSleepPreventer.m */,
 			);
 			path = MVSleepPreventer;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8603191F45CCBA009536EC /* MVSleepPreventer.m in Sources */,
 				0D86030B1F45CC95009536EC /* ViewController.m in Sources */,
 				0D8603081F45CC95009536EC /* main.m in Sources */,
 				0D8603051F45CC95009536EC /* AppDelegate.m in Sources */,
